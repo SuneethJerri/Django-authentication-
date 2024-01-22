@@ -2,7 +2,7 @@
  padding: 0;
  margin: 0;
  box-sizing: border-box;
- font-family: 'Mulish', sans-serif;
+ font-family: Monaco, monospace;
  transition: 0.3s all ease-in-out;
 }
 body{
@@ -70,5 +70,42 @@ text-decoration: none;
  background-color: #fff;
  color: #10182F;
  border-color: #10182F;
+
+}
+form.form-signin {
+    max-width: 64ch;
+    margin: auto;
+}
+.navbar {
+    font-family: Monaco, serif; 
+    padding: 2px 16px;/* Replace 'YourChosenFont' with the desired font name */
+  }
+
+  /* Optionally, change the font for other navbar elements */
+  .navbar-brand,
+  .navbar-nav,
+  .nav-link {
+    line-height: 20px; 
+    font-family: Monaco, monospace;
+  }
+
+  .btn-custom {
+    background-color: #ff6347; /* Coral color, replace with your preferred color */
+    color: #fff; /* Text color */
+    border: 1px solid #ff6347; /* Border color */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor on hover */
+    font-family: Monaco, monospace;
+    align-items: right;
+  }
+
+  .btn-custom:hover {
+    background-color: #ff473a; /* Change color on hover */
+    border-color: #ff473a; /* Change border color on hover */
+  }
+h1.main-heading,h2.side-heading{
+    color: white;
 
 }

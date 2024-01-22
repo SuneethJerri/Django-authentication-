@@ -20,16 +20,23 @@
         <li class="nav-item">
           <form method="post" action="{% url 'base:logout' %}">
               {% csrf_token %}
-              <button type="submit" class="btn btn-link">Logout</button>
+              <button type="submit" class="btn btn-custom my-2 my-lg-0">Logout</button>
           </form>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-  <div class="container mt-4">
-    <h1>Welcome to the Home Page</h1>
-    <h2>User Profiles</h2>
+<div class="container-fluid p-0 bg-image" style="
+background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-mount-fuji-free-photo.jpg?w=2210&quality=70');
+height: 100vh;
+background-size: cover;
+background-position: center; 
+position: relative;
+">
+  <div class="container mt-4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <h1 class="main-heading">Welcome to the Home Page</h1>
+    <h2 class="side-heading">User Profiles</h2>
     <ul class="list-group">
       {% for profile in profiles %}
         <li class="list-group-item">
@@ -39,4 +46,5 @@
       {% endfor %}
     </ul>
   </div>
+</div>
 {% endblock content %}
